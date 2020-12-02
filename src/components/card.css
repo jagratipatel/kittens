@@ -15,8 +15,10 @@
 }
 
 #card h1{ 
-    font-size: 22px;
-    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: rgb(72, 75, 75);
+    font-family: 'Ribeye Marrow', cursive;
 }
 
 #card h3{

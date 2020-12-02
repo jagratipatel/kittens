@@ -37,18 +37,13 @@ class App extends Component {
   .then((json) =>  this.setState({
     users : json
   })) 
-/*   Promise.all([
-    fetch("https://jsonplaceholder.typicode.com/users"),
-    fetch("https://robohash.org/139.162.116.133.png"),
-  ]).then(([res1, res2]) => {
-    this.setState({status: "fetched"})
-  }) */
   }
   
 render(){
+  console.log(this.state.users)
   return(
       <div id="back">   
-      {this.state.users.map(user=><Card key= {user.id} name={user.name} id={user.id}  />)} 
+      {this.state.users.map(user=><Card key= {user.id} name={user.username} id={user.id}  />)} 
       </div>    
   )
 }
