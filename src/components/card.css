@@ -1,6 +1,6 @@
-#card{
-    height: 23%;
-    width: 23%;
+.card{
+    height: 300px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -13,16 +13,16 @@
 }
 
 
-#card h1{ 
+.card h1{ 
     font-size: 2rem;
     margin-bottom: 2rem;
     color: rgb(72, 75, 75);
     font-family: 'Ribeye Marrow', cursive;
 }
 
-#card img{
-height: 12rem;
-width: 12rem;
+.card img{
+height: 200px;
+max-width: 200px;
 background-size: contain;
 }
 

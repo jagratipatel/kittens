@@ -15,20 +15,23 @@ html,body{
   width: 100%;
 }
 
-#container{
-  min-height: 200%;
+.container{
+  min-height:inherit;
   background-color:rgb(94, 84, 179);
 }
 
-#container #head{
+.container .head{
   text-align: center;
   line-height: 8rem;
   font-family: 'Ribeye Marrow', cursive;
   font-size: 4rem;
   letter-spacing: 4px;
+  height: 10%;
+  width: 100%;
+  padding: 10px;
 }
 
-#cards{
+.cards{
   height:100%;
   width: 100%;
   display: flex;
@@ -38,3 +41,15 @@ html,body{
   padding: 30px;
 }
 
+@media  (max-width : 400px) { 
+  .cards { 
+    flex-direction: column;
+  } 
+  .container .head {
+    font-size: 35px;
+  }
+  .card{
+    height: 50%;
+    width: 80%;
+  }
+} 
